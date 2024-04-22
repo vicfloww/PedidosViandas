@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos de viandas</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+    <div id="calendario" class="container">
+        <h2>Seleccione el dia para realizar un pedido - Abril de 2024</h2>
+        <div class="calendario-container">
+            <!-- el calendario se genera en esta area  -->
+        </div>
+    </div>
+
+    <!-- pantalla de armado del pedido -->
+
+    <div id="menu" class="container hidden">
+        <h2>Seleccioná su menú!!</h2>
+        <div class="option-section">
+            <h3>Para tomar...</h3>
+            <select id="select-bebidas"></select>
+        </div>
+        <div class="option-section">
+            <h3>Un delicisioso plato principal...</h3>
+            <select id="select-platos"></select>
+        </div>
+        <div class="option-section">
+            <h3>Un exquisito postre...</h3>
+            <select id="select-postres"></select>
+        </div>
+
+        <button id="btn-guardar">Guardar Pedido</button>
+        <button id="btn-volver-menu" class="volver">Volver al Calendario</button>
+    </div>
+
+    <!-- pantalla del pedido armado -->
+
+    <div id="pedido" class="container hidden">
+        <h2>Tu pedido es...</h2>
+
+        <div id="pedido-dia">
+            <!-- se genera la pantalla del pedido -->
+        </div>
+
+        <button id="btn-cambiar-pedido">Cambiar Pedido</button>
+        <button id="btn-volver-pedido" class="volver">Confirmar Pedido</button>
+        <button id="btn-eliminar">Eliminar Pedido</button>
+
+    </div>
+    <button id="btn-volver-menu" class="volver hidden">Volver</button>
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
